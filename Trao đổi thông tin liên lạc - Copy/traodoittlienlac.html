@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh sách đội</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        ul {
+            list-style-type: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 0;
+        }
+
+        li {
+            width: 30%;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        h3 {
+            margin-top: 0;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+    
+   .team-list{
+    list-style-type: none;
+   }
+   .team-item{
+    margin: 20px;
+    width: 200px;
+    line-height: 50px;
+    background-color: beige;
+    text-align: center;
+   }
+   .team-item a {
+    text-decoration: none;
+   } 
+   .team-item a:hover{
+    color:rgb(0, 254, 169); 
+   }
+</style>
+<body>
+    <div class="team-list-container">
+        <div style="text-align: center;">
+            <h1>Trao đổi thông tin liên lạc</h1>
+        </div>
+        <h2>Danh sách đội</h2>
+
+        <ul>
+            <li>
+                <h3>Tên đội: Đội A</h3>
+                <p>Cấp độ: Cao</p>
+                <p>Môn thể thao: Bóng đá</p>
+                <p>Số lượng thành viên: 7</p>
+                <p>Thông tin liên hệ: example@email.com</p>
+                <button onclick="location.href='./traodoiA.html'">Liên hệ</button>
+                <button>Nhận xét</button>
+                <button>Chia sẻ thông tin</button>
+            </li>
+            <li>
+                <h3>Tên đội: Đội B</h3>
+                <p>Cấp độ: Cao</p>
+                <p>Môn thể thao: Bóng đá</p>
+                <p>Số lượng thành viên: 7</p>
+                <p>Thông tin liên hệ: example@email.com</p>
+                <button onclick="location.href='./traodoiB.html'">Liên hệ</button>
+                <button>Nhận xét</button>
+                <button>Chia sẻ thông tin</button>
+            </li>
+            <li>
+                <h3>Tên đội: Đội C</h3>
+                <p>Cấp độ: Cao</p>
+                <p>Môn thể thao: Bóng đá</p>
+                <p>Số lượng thành viên: 7</p>
+                <p>Thông tin liên hệ: example@email.com</p>
+                <button onclick="location.href='./traodoiC.html'">Liên hệ</button>
+                <button>Nhận xét</button>
+                <button>Chia sẻ thông tin</button>
+            </li>
+        </ul>
+
+    </div>
+</body>
+</html>
