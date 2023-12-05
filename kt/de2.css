@@ -1,0 +1,159 @@
+header{
+    background-color: #336699;
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+}
+
+#search{
+    width: 600px;
+    height: 30px;
+    margin: 10px;
+}
+
+#cart{
+    text-decoration: none;
+    color: white;
+    margin: 20px;
+}
+
+#cart:hover{
+    color: red;
+}
+
+h3{
+    background-color: #336699 ;
+    color: white;
+    margin: 0px;
+    padding: 10px;
+}
+
+.menu{
+    background-color: white;
+    border: 1px solid black;
+    width: 200px;
+    margin-top: 20px;
+    float: left;
+    margin-right: 20px;
+}
+
+.menu>ul >li{
+    list-style: none;
+    border-bottom: 1px solid black;
+}
+
+.menu ul li{
+    position: relative;
+}
+
+.menu>ul{
+    padding: 0px;
+    margin: 0px;
+}
+
+.menu >ul>li>a{
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 10px 0px 10px 0px;
+    text-indent: 10px;
+    
+}
+
+.menu>ul>li:last-child{
+    border-bottom:none ;
+}
+
+.menu>ul>li>a:hover{
+    color: #336699 ;
+    opacity: 7;
+}
+
+.submenu{
+    display: none;
+    position: absolute;
+    padding: 0px;
+    background-color: white;
+    left: 200px;
+    top: 0px;
+    border: 1px solid black;
+    width: 150px;
+}
+hr{
+    margin: 0px 0px 0px 20px;
+}
+
+.submenu>li{
+    list-style: none;
+    margin: 20px;
+}
+
+.submenu>li>a{
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+
+.menu>ul>li:hover .submenu{
+    display: block;
+}
+
+.content{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin: 20px;
+    background-color: white;
+}
+
+.sp{
+    display: grid;
+    grid-template-columns: auto;
+    border: 1px solid gray;
+}
+
+.anh>img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.anh{
+    width: 200px;
+    height: 400px;
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.nd{
+    border-top: 1px solid gray;
+}
+
+.tensp{
+    text-align: center;
+}
+
+.tensp:hover{
+    color:red;
+}
+
+.gia{
+    float: left;
+    margin: 10px 20px 0px 20px;
+    color: red;
+}
+
+.gia_giam{
+    float: left;
+    margin: 0px 0px 10px 20px;
+}
+
+.sale{
+    margin: 10px auto 0px 100px;
+    background-color: red;
+    padding: 0px;
+    color: white;
+    width: fit-content;
+    padding: 0px 5px 0px 5px;
+}

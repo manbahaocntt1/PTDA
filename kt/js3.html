@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #name{
+            margin-left: 20px;
+        }
+        #ten{
+            margin: 5px 0px 0px 59px;
+        }
+
+        .nut{
+            margin: 10px 0px 0px 80px;
+        }
+
+    </style>
+</head>
+<body>
+
+        <label for="name">ho va ten:</label>
+        <input id="name" type="text">
+        <br>
+        <label for="ten">ten:</label>
+        <input id="ten" type="text">
+        <br>
+        <div class="nut">
+            <button id="display" onclick="chuanhoa()">hien thi</button>
+            <button id="cancel" onclick="cancel()">huy bo</button> 
+        </div>
+        
+
+
+    <script>
+
+        function standardizeName(fullName) {
+        // Loại bỏ khoảng trắng ở đầu và cuối chuỗi
+        fullName = fullName.trim();
+
+        // Tách chuỗi thành các từ riêng biệt
+        let words = fullName.split(/\s+/);
+
+        let capitalizedWords = words.map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase());
+
+        // Xây dựng lại chuỗi đã chuẩn hóa
+        let standardizedName = capitalizedWords.join(' ');
+
+        return standardizedName;
+        }
+
+        function chuanhoa(){
+            let name = document.getElementById("name").value;
+            let full_name = standardizeName(name);
+
+            let arr = full_name.split(" ");
+
+            document.getElementById("name").value = full_name;
+            document.getElementById("ten").value = arr[arr.length-1];
+        }
+
+        function cancel(){
+            document.getElementById("name").value = "";
+            document.getElementById("ten").value = "";
+        }
+
+    </script>
+</body>
+</html>

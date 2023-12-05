@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #nut{
+            padding-left: 70px;
+        }
+        table{
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td><label>Nhap chuoi</label></td>
+            <td><input type="text" id="in" maxlength="255"></td>
+        </tr>
+        <tr>
+            <td><label>So tu co 4 ky tu</label></td>
+            <td><input type="text" id="put"></td>
+        </tr>
+        <tr >
+            <td id="nut" colspan="2"><button id="tim" onclick="find()">Tim</button>
+            <button id="huy" onclick="cancel()">huy bo</button></td>
+        </tr>
+    </table>
+
+    <script>
+        const arr = document.getElementById("in");
+        function find(){
+            var words = arr.value.split(" ");
+            let count = 0;
+            for(let i = 0; i < words.length;i++){
+                if(words[i].length == 4 && words[i].charAt(0).toLowerCase() == 'm' ){
+                    count++;
+                }
+            }
+            document.getElementById("put").value = count;
+        }
+
+        function cancel(){
+            document.getElementById("in").value = "";
+            document.getElementById("put").value = "";
+        }
+        
+    </script>
+</body>
+</html>

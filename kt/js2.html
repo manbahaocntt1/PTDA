@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <form action="#" method="get">
+            <label for="ten">username</label>
+        <input id="ten" type="text" required>
+        <br>
+        <label for="pass">password</label>
+        <input type="password" id="pass" required>
+        <br>
+        <button id="check" onclick="kt()">kiem tra password</button>
+        </form>
+    </div>
+    
+    <script>
+        function kt(){
+            var name = document.getElementById("ten");
+            var pass = document.getElementById("pass");
+
+            var regpass = /^(?=.*[A-Z])(?=.*\d).{8,}$/;
+
+            if (name.value === '' || pass.value === '') {
+                alert("ten dang nhap va mat khau ko dc de trong");
+                return;
+            }
+
+            if(!regpass.test(pass.value)){
+                alert("Ban nhap sai");
+                return;
+            }
+
+            if(!isNaN(pass.value.charAt(0))){
+                alert("Ban nhap sai");
+                return;
+            }
+
+            alert("Ban nhap dung");
+        }
+    </script>
+</body>
+</html>
