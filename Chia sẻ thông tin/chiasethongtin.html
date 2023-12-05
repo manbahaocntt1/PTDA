@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chia se thong tin</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        ul {
+            list-style-type: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 0;
+        }
+
+        li {
+            width: 30%;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        h3 {
+            margin-top: 0;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+    
+   .team-list{
+    list-style-type: none;
+   }
+   .team-item{
+    margin: 20px;
+    width: 200px;
+    line-height: 50px;
+    background-color: beige;
+    text-align: center;
+   }
+   .team-item a {
+    text-decoration: none;
+   } 
+   .team-item a:hover{
+    color:rgb(0, 254, 169); 
+   }
+   #shareOptions {
+    display: none;
+    margin-top: 10px;
+    }
+    #shareOptions2{
+        display: none;
+        margin-top: 10px;
+    }
+    #shareOptions3{
+        display: none;
+        margin-top: 10px;
+    }
+</style>
+<body>
+    <div class="team-list-container">
+        <div style="text-align: center;">
+            <h1>Chia sẻ thông tin</h1>
+        </div>
+        <h2>Danh sách đội</h2>
+
+        <ul>
+            <li>
+                <h3>Tên đội: Đội A</h3>
+                <p>Cấp độ: Cao</p>
+                <p>Môn thể thao: Bóng đá</p>
+                <p>Số lượng thành viên: 7</p>
+                <p>Thông tin liên hệ: example@email.com</p>
+                <button>Liên hệ</button>
+                <button>Nhận xét</button>
+                <button onclick="hienHoiThoaiChiaSe()">Chia sẻ</button>
+
+                <div id="shareOptions">
+                    <label for="shareSelect1">Chọn cách chia sẻ:</label>
+                    <select class="shareSelect" id="shareSelect1">
+                        <option value="facebook">Facebook</option>
+                        <option value="twitter">Twitter</option>
+                        <option value="email">Email</option>
+                    </select>
+                    <button onclick="chiaSe1()">Chia sẻ</button>
+                </div>
+            </li>
+            <li>
+                <h3>Tên đội: Đội B</h3>
+                <p>Cấp độ: Cao</p>
+                <p>Môn thể thao: Bóng đá</p>
+                <p>Số lượng thành viên: 7</p>
+                <p>Thông tin liên hệ: example@email.com</p>
+                <button>Liên hệ</button>
+                <button>Nhận xét</button>
+                <button onclick="hienHoiThoaiChiaSe2()">Chia sẻ</button>
+
+                <div id="shareOptions2">
+                    <label for="shareSelect2">Chọn cách chia sẻ:</label>
+                    <select class="shareSelect" id="shareSelect2">
+                        <option value="facebook">Facebook</option>
+                        <option value="twitter">Twitter</option>
+                        <option value="email">Email</option>
+                    </select>
+                    <button onclick="chiaSe2()">Chia sẻ</button>
+                </div>
+            </li>
+            <li>
+                <h3>Tên đội: Đội C</h3>
+                <p>Cấp độ: Cao</p>
+                <p>Môn thể thao: Bóng đá</p>
+                <p>Số lượng thành viên: 7</p>
+                <p>Thông tin liên hệ: example@email.com</p>
+                <button>Liên hệ</button>
+                <button>Nhận xét</button>
+                <button onclick="hienHoiThoaiChiaSe3()">Chia sẻ</button>
+
+                <div id="shareOptions3">
+                    <label for="shareSelect3">Chọn cách chia sẻ:</label>
+                    <select class="shareSelect" id="shareSelect3">
+                        <option value="facebook">Facebook</option>
+                        <option value="twitter">Twitter</option>
+                        <option value="email">Email</option>
+                    </select>
+                    <button onclick="chiaSe3()">Chia sẻ</button>
+                </div>
+            </li>
+        </ul>
+
+    </div>
+
+
+    
+<script>
+    function hienHoiThoaiChiaSe() {
+            document.getElementById('shareOptions').style.display = 'block';
+        }
+
+        function chiaSe1() {
+            var chiaSeOption = document.getElementById('shareSelect1').value;
+            xuLyChiaSe(chiaSeOption, '1');
+        }
+
+        function hienHoiThoaiChiaSe2() {
+            document.getElementById('shareOptions2').style.display = 'block';
+        }
+
+        function chiaSe2() {
+            var chiaSeOption = document.getElementById('shareSelect2').value;
+            xuLyChiaSe(chiaSeOption, '2');
+        }
+
+        function hienHoiThoaiChiaSe3() {
+            document.getElementById('shareOptions3').style.display = 'block';
+        }
+
+        function chiaSe3() {
+            var chiaSeOption = document.getElementById('shareSelect3').value;
+            xuLyChiaSe(chiaSeOption, '3');
+        }
+
+        function xuLyChiaSe(chiaSeOption, teamNumber) {
+            switch (chiaSeOption) {
+                case 'facebook':
+                    alert('Đội ' + teamNumber + ': Đã chia sẻ qua Facebook');
+                    break;
+                case 'twitter':
+                    alert('Đội ' + teamNumber + ': Đã chia sẻ qua Twitter');
+                    break;
+                case 'email':
+                    alert('Đội ' + teamNumber + ': Đã chia sẻ qua Email');
+                    break;
+                default:
+                    break;
+            }
+
+            document.getElementById('shareOptions' + teamNumber).style.display = 'none';
+        }
+    </script>
+</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhận xét về sân đấu</title>
+    <link rel="stylesheet" href="nhanxet.css">
+</head>
+<body>
+    <div class="review-container">
+        <h2>Nhận xét về sân đấu B</h2>
+
+        <div class="comments-cell" id="teamComments">
+           <p style="background-color:#a4eca7; padding: 16px; margin-bottom: 5px; border-radius: 3px;">Sân hơi nhiều sỏi</p>
+           <p style="background-color:#a4eca7; padding: 16px; margin-bottom: 5px; border-radius: 3px;">Tuyệt!</p>
+           <p style="background-color:#a4eca7; padding: 16px; margin-bottom: 5px; border-radius: 3px;">Sân đẹp!</p>
+           <p style="background-color:#a4eca7; padding: 16px; margin-bottom: 5px; border-radius: 3px;">Tạm</p>
+        </div>
+
+        <div class="new-comment">
+            <textarea id="teamTextarea" placeholder="Viết nhận xét..." onclick="stopPropagation(event)" oninput="handleInput()"></textarea>
+            <button onclick="addComment()">Gửi</button>
+        </div>
+    </div>
+
+    <script src="./nhanxet.js"></script>
+</body>
+</html>

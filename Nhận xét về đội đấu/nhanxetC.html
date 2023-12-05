@@ -1,0 +1,32 @@
+<!-- Thêm vào file review.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhận xét về đội đấu</title>
+    <link rel="stylesheet" href="nhanxet.css">
+</head>
+<body>
+    <div class="review-container">
+        <h2>Nhận xét về đội đấu C</h2>
+
+        <div class="comments-cell" id="teamComments">
+
+            <p style="background-color:#a4eca7; padding: 16px; margin-bottom: 5px; border-radius: 3px;">Sút hay</p>
+           <p style="background-color:#a4eca7; padding: 16px; margin-bottom: 5px; border-radius: 3px;">Tinh thần thể thao tốt</p>
+           <p style="background-color:#a4eca7; padding: 16px; margin-bottom: 5px; border-radius: 3px;">Kĩ năng tốt!</p>
+           <p style="background-color:#a4eca7; padding: 16px; margin-bottom: 5px; border-radius: 3px;">Vui là chính</p>
+
+        </div>
+
+        <div class="new-comment">
+            <textarea id="teamTextarea" placeholder="Viết nhận xét..." onclick="stopPropagation(event)" oninput="handleInput()"></textarea>
+            <button onclick="addComment()">Gửi</button>
+        </div>
+    </div>
+
+    <script src="./nhanxet.js"></script>
+</body>
+</html>

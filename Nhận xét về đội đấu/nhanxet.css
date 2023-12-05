@@ -1,0 +1,34 @@
+
+
+.comment {
+    background-color:#a4eca7;
+    padding: 5px;
+    margin-bottom: 5px;
+    border-radius: 3px;
+}
+
+.new-comment {
+    margin-top: 10px;
+}
+
+.new-comment textarea {
+    width: calc(100% - 70px);
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+.new-comment button {
+    padding: 5px 10px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 3px;
+}
+
+
+.new-comment p { 
+    padding: 5px;
+    margin: 0;
+    border-radius: 3px;
+}

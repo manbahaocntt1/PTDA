@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhan xet ve san dau</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        ul {
+            list-style-type: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 0;
+        }
+
+        li {
+            width: 30%;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        h3 {
+            margin-top: 0;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+    
+   .team-list{
+    list-style-type: none;
+   }
+   .team-item{
+    margin: 20px;
+    width: 200px;
+    line-height: 50px;
+    background-color: beige;
+    text-align: center;
+   }
+   .team-item a {
+    text-decoration: none;
+   } 
+   .team-item a:hover{
+    color:rgb(0, 254, 169); 
+   }
+</style>
+<body>
+    <div class="team-list-container">
+        <div style="text-align: center;">
+            <h1>Nhận xét về sân đấu</h1>
+        </div>
+        <h2>Danh sách sân đấu</h2>
+
+        <ul>
+            <li>
+                <h3>Tên sân: Sân A</h3>
+                <p>Loại sân: Sân bóng đá</p>
+                <p>Kích thước: 105m x 68m</p>
+                <p>Bề mặt sân: Cỏ nhân tạo</p>
+                <p>Trạng thái bảo trì: Tốt</p>
+                <p>Tiện ích: đầy đủ</p>
+                <p>Dịch vụ đi kèm: Đồ thể thao</p>
+                <button onclick="location.href='./nhanxetsanA.html'">Nhận xét</button>
+            </li>
+            <li>
+                <h3>Tên sân: Sân B</h3>
+                <p>Loại sân: Sân bóng chuyền</p>
+                <p>Kích thước: 18m x 9m</p>
+                <p>Bề mặt sân: Thảm PVC</p>
+                <p>Trạng thái bảo trì: Tốt</p>
+                <p>Tiện ích: đầy đủ</p>
+                <p>Dịch vụ đi kèm: Đồ ăn nhanh</p>
+                <button onclick="location.href='./nhanxetsanB.html'">Nhận xét</button>
+            </li>
+            <li>
+                <h3>Tên sân: Sân C</h3>
+                <p>Loại sân: Sân bóng đá</p>
+                <p>Kích thước: 50m x 39m</p>
+                <p>Bề mặt sân: Cỏ thật</p>
+                <p>Trạng thái bảo trì: Tốt</p>
+                <p>Tiện ích: đầy đủ</p>
+                <p>Dịch vụ đi kèm: Đồ ăn nhanh + Dịch vụ vệ sinh giày</p>
+                <button onclick="location.href='./nhanxetsanC.html'">Nhận xét</button>
+            </li>
+        </ul>
+
+    </div>
+</body>
+</html>
